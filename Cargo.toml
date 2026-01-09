@@ -1,10 +1,22 @@
 [package]
 name = "mollusk-helper"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
+rust-version = "1.75.0"
+authors = ["Ohad Dahan <ohaddahan@gmail.com>"]
 description = "Simplified Mollusk wrapper for Solana program testing with atomic transaction support"
 license = "MIT"
 repository = "https://github.com/ohaddahan/mollusk-helper"
+homepage = "https://github.com/ohaddahan/mollusk-helper"
+documentation = "https://docs.rs/mollusk-helper"
+readme = "README.md"
+keywords = ["solana", "testing", "mollusk", "blockchain", "svm"]
+categories = ["development-tools::testing", "cryptography::cryptocurrencies"]
+exclude = [
+    ".github/*",
+    ".cargo/*",
+    "tests/*",
+]
 
 [dependencies]
 mollusk-svm = { version = "0.9", features = ["inner-instructions", "all-builtins"] }
